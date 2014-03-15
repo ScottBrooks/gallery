@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<!-- 
+	
+Video player in gallery does not currently support other file types, like .mp4 or .flv, but the developer can add that feature upon request.
+
+<fullsize> contains the path to each full size image in the gallery, or the URL to the vimeo or youtube video
+
+ACCEPTABLE VIMEO FORMATS FOR <fullsize>
+	http://vimeo.com/63918436
+	http://www.vimeo.com/63918436
+	http://player.vimeo.com/video/63918436
+	63918436
+
+
+ACCEPTABLE YOUTUBE FORMATS FOR <fullsize>
+	http://www.youtube.com/watch?v=dgspCfmtcoE
+	http://www.youtube.com/embed/dgspCfmtcoE
+	dgspCfmtcoE
+	
+
+ACCEPTABLE PHOTO FORMATS FOR <fullsize> (you must include the folder name like this example - use any folders you want)
+	gallery/lightning.jpg
+
+
+* * * Everything between <![CDATA[ and ]]> tags will enable HTML code to be implemented, for example...
+
+<description><![CDATA[
+	<b>Lorem ipsum</b> dolor sit amet, <a href="http://www.themeforest.net/user/egobuilders" target="_blank">consectetuer adipiscing elit</a>, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+]]></description>
+
+-->
+
+
+<gallery>
+	
+	<media>
+		
+		<fullsize>
+			gallery/sky.jpg
+		</fullsize>
+		
+		<thumbnail>
+			gallery/sky_th.jpg
+		</thumbnail>
+		
+		<header><![CDATA[
+			XML GALLERY
+		]]></header>
+		
+		<title><![CDATA[
+			Aliquip ex ea Commodo Consequat Lorem Ipsum Dolor Sit Amet Consectetuer
+		]]></title>
+		
+		<description><![CDATA[
+			Adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis uisl ut aliquip ex ea commodo consequat lorem. <a href="http://www.themeforest.net/user/egobuilders" target="_blank">Ipsum dolor sit amet</a>, consectetuer.
+		]]></description>
+		
+		<button>
+			LOREM IPSUM
+		</button>
+		
+		<link>
+			www.themeforest.net/user/egobuilders
+		</link>
+		
+	</media>
+	
+	
+	
+	
+</gallery>
+
+

@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!--
+	
+FOR ADDITIONAL SUPPORT: Contact the developer at http://www.themeforest.net/user/egobuilders
+
+In this file "index.html":
+	• Change logo images and site/company name in this file (logos are in the "images" folder)
+	• Make all text content changes in this file
+	• Edit navigation menu in this file (text on buttons should match id of section it scrolls to - not case sensitive)
+	
+See "style.css" to update crew photos, background images, fonts, colors, and other CSS (all images are in the "images" folder, except for gallery photos and thumbnails)
+
+See "gallery.xml" to edit gallery text captions, photos, and links to youtube or vimeo videos (all thumbnails and photos for the gallery are in the "gallery" folder)
+
+(The video player in the gallery does not currently support other file types, such as .mov, .avi, .mpg, .flv, etc., but the developer can add that feaure upon request)
+
+**********************************************************************************************
+
+HTML TABLE OF CONTENTS
+
+1.0 - <head> - load style.css and responsive.css, Google Fonts, and javascript/jQuery files
+
+2.0 - <body> - website layout
+
+	2.1 - home
+	
+	2.2 - header - navigation menu, logo, and color-picker
+		2.2.1 - navigation menu
+		2.2.2 - logo
+		2.2.3 - color-picker
+		
+	2.3 - gallery
+	
+	2.4 - crew
+		2.4.1 - crew member social networking icons
+			2.4.1.1 - crew member 1 social networking icons
+			2.4.1.2 - crew member 2 social networking icons
+		2.4.2 - crew member photo
+			2.4.2.1 - crew member 1 photo
+			2.4.2.2 - crew member 2 photo
+			
+	2.5 - about
+	
+	2.6 - responsive (just the section name, not the responsive programming)
+	
+	2.7 - contact - AJAX, jQuery, PHP eMail form
+		2.7.1 - social networking icons below contact section
+		
+	2.8 - footer, footer logo
+	
+3.0 - overlays (see gallery.xml file) - gallery, gallery captions, gallery buttons, and "Loading" page
+	3.1 - "full" is the fullsized gallery - contains slideshow photos and videos
+	3.2 - gallery captions, gallery buttons
+	3.3 - gallery slideshow captions
+	3.4 - "LOADING" page
+	
+4.0 - <script> - load additional external jquery files before closing body tag
+
+5.0 </body> - close the body tag
+
+**********************************************************************************************
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+	
+1.0 - <head> - load external css, Google Fonts, and jquery files
+
+-->
+
+<head>
+	<title>
+	  Ada Faith Brooks
+	</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<!-- DISABLE COMPATIBILITY MODE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	
+	<!-- CSS -->
+	<link href="style.css" type="text/css" media="screen" rel="stylesheet" />
+	<link href="responsive.css" type="text/css" media="screen" rel="stylesheet" />
+	
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:100italic,200italic,300italic,400italic,600italic,700italic,800italic,100,200,300,400,600,700,800' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css' />
+	
+	<!-- Javascript / jQuery -->
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/detect_browser.js"></script>
+	<script type="text/javascript" src="js/detect_os.js"></script>
+	<!-- js/functions.js and js/email.js are loaded at the bottom of this page -->
+	
+	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	
+</head>
+
+
+
+
+
+
+<!--
+
+2.0 - <body> - website layout
+
+-->
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- not visible while full screen slideshow is active -->
+<div id="site">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+2.1 - home
+
+-->
+
+<div id="home" class="layer home-click bg-home">
+	
+	<div id="logo-home" class="white">
+		
+		<!-- OPTIONAL - you CAN put ANOTHER logo here if you remove the "comment" tags below -->
+		
+		<!--
+		<div class="pad-bottom-40">
+			<img src="images/logo_home.png" alt="" />
+		</div>
+		-->
+		
+		<h1 class="text-color logo-font">Ada Faith Brooks</h1>
+		
+		
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+2.2 - menu, logo, and color-picker
+
+-->
+
+<div id="menu" class="layer bg-black">
+	<div class="responsive">
+		
+		
+		
+		<div id="menu-btn">
+			<div class="menu-btn-padding text-color">Menu</div><!-- only visible on smaller screens -->
+		</div>
+		
+		
+		
+		<!--
+		
+		2.2.1 - navigation menu
+		
+		-->
+		
+		<div class="header-width-43 the-nav">
+			
+			<div class="the-nav-padding">
+			
+				<a class="menu">Home</a>
+				<a class="menu">Gallery</a>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		<!--
+		
+		2.2.2 - logo
+		
+		-->
+		
+		<div class="header-width-14 the-logo">
+			
+			<div id="logo-nav" class="bg-color center"><!-- change "bg-color" in class here to "bg-black" when your logo is added -->
+				
+				<!-- your logo goes here - change "bg-color" in class above to "bg-black" -->
+				
+				<img src="images/logo_nav.png" alt="" />
+				
+				<!-- your logo goes above here -->
+			
+			</div>
+			
+		</div>
+		<!-- end header sections -->
+		
+	</div>
+</div>
+
+
+
+<!--
+
+2.3 - gallery
+
+-->
+
+<div id="gallery" class="layer bg-white padder-top padder-bottom">
+	
+	<div class="responsive">
+		
+		
+		
+		<div class="width-50">
+		
+			<div class="hpad">
+		
+				<div id="thumbs" class="align-center">
+					
+					<!--
+						Update gallery thumbnails, captions, photos, and videos in gallery.xml
+						The thumbanils are loaded into this div, "thumbs"
+					-->
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!-- right side -->
+		
+		<div class="width-50">
+		
+			<div class="hpad">
+				
+				<h1 class="charcoal">
+					Our beautiful <span class="text-color-on-white">daughter</span>
+				</h1>
+				
+				<h3 class="charcoal">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorper. 
+				</h3>
+				
+				<div class="text grey">
+					
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.</p>
+				</div>
+				
+				<button name="crew" class="scroll-button button-text-color">
+					Meet the Crew
+				</button>
+				
+			</div>
+		
+		</div>
+		
+		<!-- end sections -->
+		
+	</div>
+	
+</div>
+
+
+
+<!--
+
+2.8 - footer, footer logo
+
+-->
+
+<div id="footer" class="layer bg-black">
+	
+	<div class="responsive">
+		
+		<div class="width-100 center">
+			
+			<div id="logo-footer" class="go-to-top">
+				
+				<!-- your logo goes here -->
+				
+				<img src="images/logo_footer.png" alt="" />
+				
+				<!-- your logo goes above here -->
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+</div><!-- END #SITE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+3.0 - overlays (see gallery.xml file) - gallery, gallery captions, gallery buttons, and "Loading" page
+
+-->
+
+
+
+
+
+<!--
+
+3.1 - "full" is the fullsized gallery - contains slideshow photos and videos
+
+-->
+
+<div id="full"></div>
+
+
+
+
+
+<!--
+
+3.2 - gallery captions, gallery buttons
+
+-->
+
+<div id="slideshow-header">
+
+	<div id="controls">
+		
+		<!-- gallery header -->
+		<h1 id="gallery-header" class="white pad"></h1>
+		
+		<!-- button: hide slideshow -->
+		<div id="hide-slideshow">
+			&nbsp;
+		</div>
+
+		<!-- button: show/hide slideshow captions -->
+		<div id="toggle-captions">
+			&nbsp;
+		</div>
+		
+		<div id="gallery-left">&nbsp;</div>
+		<div id="gallery-right">&nbsp;</div>
+		
+	</div>
+	
+</div>
+
+
+
+
+
+<!--
+
+3.3 - gallery slideshow captions
+
+-->
+
+<div id="captions" class="bg-white">
+	
+	<div class="captions-pad">
+		
+		<div class="gallery-caption-content">
+			<h1 id="gallery-title" class="charcoal-important">&nbsp;</h1>
+			<div id="gallery-description" class="grey">&nbsp;</div>
+			<div id="gallery-link">&nbsp;</div>
+		</div>
+		
+		<div id="hide-captions">&nbsp;</div>
+		
+	</div>
+	
+</div>
+
+
+
+
+
+<!--
+
+3.4 - "LOADING" page
+
+-->
+
+<div id="intro" class="center bg-black">
+	<div id="loading">
+		
+		<div id="logo-loading" class="bg-color center">
+			
+			<!-- your logo goes here - change "bg-color" above to "bg-black" -->
+			
+			<img src="images/logo_nav.png" alt="" />
+			
+			<!-- your logo goes above here -->
+		
+		</div>
+		
+		<h6 class="loading-text white pad-bottom-20">
+			LOADING
+		</h6>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+4.0 - <script> - load additional external jquery files
+
+-->
+
+<!-- website jQuery functionality -->
+<script type="text/javascript" src="js/functions.js"></script>
+
+<!-- eMail validation -->
+<script type="text/javascript" src="js/email.js"></script>
+
+
+
+
+
+<!--
+
+5.0 </body> - close the body tag
+
+-->
+
+</body>
+
+</html>
